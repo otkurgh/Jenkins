@@ -3,10 +3,10 @@ node {
 		git "https://github.com/otkurgh/Jenkins.git"
 		}
 	stage ('Build'){
-    	dir("comtest") {
+    	dir("/Users/otkurghojash/eclipse-workspace/JenkinsCI/") {
 	   sh "mvn clean install"
        }
-       	dir("comtest/target") {
+       	dir("/Users/otkurghojash/eclipse-workspace/JenkinsCI/target") {
 	   sh "java -jar com.test-1.0-SNAPSHOT.jar"
        }
 		}
