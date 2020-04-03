@@ -7,7 +7,7 @@ node {
 	   sh "mvn clean install"
        }
        	dir("/Users/otkurghojash/eclipse-workspace/JenkinsCI/target") {
-	   sh "java -jar JenkinsCI-1.0-SNAPSHOT.jar"
+	   sh "java -jar JenkinsCI-0.0.1-SNAPSHOT.jar"
        }
 		}
 }
