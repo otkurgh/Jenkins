@@ -1,5 +1,6 @@
 /Users/otkurghojash/eclipse-workspace/JenkinsCI/src/test/java/jenkins/pages/ResultPage.java
 /Users/otkurghojash/eclipse-workspace/JenkinsCI/src/test/java/jenkins/pages/SearchPage.java
+/Users/otkurghojash/eclipse-workspace/JenkinsCI/src/test/java/jenkins/pages/SeleniumPage.java
 /Users/otkurghojash/eclipse-workspace/JenkinsCI/src/test/java/jenkins/tests/GoogleTest.java
 /Users/otkurghojash/eclipse-workspace/JenkinsCI/src/test/java/jenkins/utils/screenShot.java
 /Users/otkurghojash/eclipse-workspace/JenkinsCI/src/test/java/jenkins/utils/ExcelWrite.java

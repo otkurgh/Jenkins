@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="9228" started-at="2020-04-03T10:08:30 EDT" finished-at="2020-04-03T10:08:39 EDT">
+  <suite name="Surefire suite" duration-ms="14365" started-at="2020-04-03T13:45:27 EDT" finished-at="2020-04-03T13:45:42 EDT">
     <groups>
     </groups>
-    <test name="Test" duration-ms="9228" started-at="2020-04-03T10:08:30 EDT" finished-at="2020-04-03T10:08:39 EDT">
-      <class name="jenkins.tests.GoogleTest">
-        <test-method status="PASS" signature="setExtent()[pri:0, instance:jenkins.tests.GoogleTest@5a4041cc]" name="setExtent" is-config="true" duration-ms="153" started-at="2020-04-03T10:08:30 EDT" finished-at="2020-04-03T10:08:30 EDT">
+    <test name="Surefire test" duration-ms="14365" started-at="2020-04-03T13:45:27 EDT" finished-at="2020-04-03T13:45:42 EDT">
+      <class name="jenkins.tests.SearchTest">
+        <test-method status="PASS" signature="setExtent()[pri:0, instance:jenkins.tests.SearchTest@cd2dae5]" name="setExtent" is-config="true" duration-ms="156" started-at="2020-04-03T13:45:27 EDT" finished-at="2020-04-03T13:45:27 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setExtent -->
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:jenkins.tests.GoogleTest@5a4041cc]" name="setUp" is-config="true" duration-ms="2835" started-at="2020-04-03T10:08:30 EDT" finished-at="2020-04-03T10:08:33 EDT">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:jenkins.tests.SearchTest@cd2dae5]" name="setUp" is-config="true" duration-ms="2515" started-at="2020-04-03T13:45:27 EDT" finished-at="2020-04-03T13:45:30 EDT">
           <params>
             <param index="0">
               <value>
@@ -22,26 +22,26 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="googleSearch()[pri:0, instance:jenkins.tests.GoogleTest@5a4041cc]" name="googleSearch" duration-ms="5754" started-at="2020-04-03T10:08:33 EDT" finished-at="2020-04-03T10:08:39 EDT">
+        <test-method status="PASS" signature="searchResultTest()[pri:0, instance:jenkins.tests.SearchTest@cd2dae5]" name="searchResultTest" duration-ms="11179" started-at="2020-04-03T13:45:30 EDT" finished-at="2020-04-03T13:45:41 EDT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- googleSearch -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:jenkins.tests.GoogleTest@5a4041cc]" name="tearDown" is-config="true" duration-ms="133" started-at="2020-04-03T10:08:39 EDT" finished-at="2020-04-03T10:08:39 EDT">
+        </test-method> <!-- searchResultTest -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:jenkins.tests.SearchTest@cd2dae5]" name="tearDown" is-config="true" duration-ms="161" started-at="2020-04-03T13:45:41 EDT" finished-at="2020-04-03T13:45:41 EDT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=googleSearch status=SUCCESS method=GoogleTest.googleSearch()[pri:0, instance:jenkins.tests.GoogleTest@5a4041cc] output={null}]]]>
+                <![CDATA[[TestResult name=searchResultTest status=SUCCESS method=SearchTest.searchResultTest()[pri:0, instance:jenkins.tests.SearchTest@cd2dae5] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:jenkins.tests.GoogleTest@5a4041cc]" name="endReport" is-config="true" duration-ms="320" started-at="2020-04-03T10:08:39 EDT" finished-at="2020-04-03T10:08:39 EDT">
+        <test-method status="PASS" signature="endReport()[pri:0, instance:jenkins.tests.SearchTest@cd2dae5]" name="endReport" is-config="true" duration-ms="320" started-at="2020-04-03T13:45:41 EDT" finished-at="2020-04-03T13:45:42 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
-      </class> <!-- jenkins.tests.GoogleTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+      </class> <!-- jenkins.tests.SearchTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
 </testng-results>

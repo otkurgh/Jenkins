@@ -59,6 +59,7 @@ public class BaseClass {
 	}
 
 	
+
 	@BeforeMethod
 	@Parameters(value= {"browser"})
 	public void setUp(@Optional("chrome")String browser) {
@@ -94,6 +95,7 @@ public class BaseClass {
 	}
 
 	
+
 	@AfterMethod
 	public void tearDown(ITestResult result) {
 

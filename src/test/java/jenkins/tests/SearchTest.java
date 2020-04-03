@@ -1,7 +1,8 @@
 package jenkins.tests;
 
-import org.testng.Assert;
 import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+
 
 import jenkins.base.BaseClass;
 import jenkins.pages.ResultPage;
@@ -24,7 +25,7 @@ public class SearchTest extends BaseClass {
 		result.showResults();
 		result.targetLink();
 		sel.pageConfirm();
-		Assert.assertEquals(sel.pageTitle, "7 Science-Based Health Benefits of Selenium");	
+		AssertJUnit.assertEquals(sel.pageTitle, "7 Science-Based Health Benefits of Selenium");	
 	}
 	
 	
