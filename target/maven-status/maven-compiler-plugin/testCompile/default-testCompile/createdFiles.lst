@@ -1,5 +1,6 @@
 jenkins/utils/Recording.class
 jenkins/tests/GoogleTest.class
+jenkins/tests/SearchTest.class
 jenkins/pages/ResultPage.class
 jenkins/pages/SearchPage.class
 jenkins/utils/ExcelRead.class

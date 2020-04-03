@@ -15,18 +15,35 @@ public class ResultPage extends BaseClass {
 	public ResultPage showResults() {
 		
 								
-	
   List<WebElement> list=driver.findElements(By.tagName("a"));
   
-  for(WebElement elem:list) {
-	
-	  System.out.println(elem.getAttribute("href"));
-  
-  }
+  System.out.println("There are " + list.size()+ " results found....");
 	
 	return this;
 	}
 	
 	
+	
+	public SeleniumPage targetLink() {
+		
+		List<WebElement> list=driver.findElements(By.tagName("a"));
+		  
+		  for(WebElement elem:list) {
+			
+			  if(elem.getText().equals("Selenium")) {
+				  
+				  elem.click();
+				  break;
+				  
+				  
+			  }
+		  
+		  }
+		
+		
+		
+		
+		return new SeleniumPage();
+	}
 	
 }
