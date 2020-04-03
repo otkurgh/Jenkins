@@ -4,7 +4,7 @@ node {
 		}
 	stage ('Build'){
     	dir("/Users/otkurghojash/eclipse-workspace/JenkinsCI/") {
-	   sh "mvn clean install -Dtest=SearchTest.java
+	   sh "mvn clean install -Dtest=SearchTest.java"
        }
        		}
 }
