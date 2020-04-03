@@ -8,7 +8,6 @@ public class SeleniumPage extends BaseClass {
 	
    public SeleniumPage pageConfirm() {
 	   
-	   
 	   pageTitle=driver.getTitle();
 	   
 	   System.out.println("The title of the page is" + pageTitle);

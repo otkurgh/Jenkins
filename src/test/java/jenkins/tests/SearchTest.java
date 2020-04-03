@@ -16,14 +16,15 @@ public class SearchTest extends BaseClass {
 	
 	
 	@Test
-	public void searchResultTest() {
+	public void searchResultTest() throws InterruptedException {
 		
 		test=extent.createTest("googleSearch");
 		search.homepage();
 		search.result();
 		result.showResults();
 		result.targetLink();
-		Assert.assertEquals(sel.pageTitle, "SeleniumHQ Browser Automation");	
+		sel.pageConfirm();
+		Assert.assertEquals(sel.pageTitle, "7 Science-Based Health Benefits of Selenium");	
 	}
 	
 	
