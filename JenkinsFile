@@ -1,27 +1,5 @@
 pipeline {
 
-    agent {
-        node {
-            label 'SLAVE01'
-        }
-    }
-
-    tools {
-        maven 'maven3'
-    }
-
-    options {
-        buildDiscarder logRotator(
-                    daysToKeepStr: '15',
-                    numToKeepStr: '10'
-            )
-    }
-
-    environment {
-        APP_NAME = "JENKINS"
-        APP_ENV  = "DEV"
-    }
-
     stages {
 
         stage('Cleanup Workspace') {
