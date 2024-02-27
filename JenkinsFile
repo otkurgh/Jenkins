@@ -3,7 +3,7 @@ node {
 		git "https://github.com/otkurgh/Jenkins.git"
 		}
 	stage ('Build'){
-    	dir("/Users/otkurghojash/Desktop/git/sloProject/Jenkins/JenkinsCI/") {
+    	dir("/Users/otkurghojash/Desktop/git/sloProject/Jenkins/") {
 	   sh "mvn clean install -Dtest=SearchTest.java"
        }
        		}
