@@ -27,9 +27,8 @@ public class BaseClass {
 
 	public static WebDriver driver;
 	//public Page page;
-    
-    
 
+	//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
 	public ExtentHtmlReporter htmlReporter;
 	public ExtentReports extent;
 	public ExtentTest test;
