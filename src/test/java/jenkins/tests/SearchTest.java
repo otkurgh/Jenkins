@@ -20,7 +20,7 @@ public class SearchTest extends BaseClass {
 	public void searchResultTest() throws InterruptedException {
 		//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
 		
-		test=extent.createTest("googleSearch");
+		test=extent.createTest("searchResultTest");
 		search.homepage();
 		search.result();
 		result.showResults();
