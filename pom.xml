@@ -14,12 +14,12 @@
 		</dependency>
 
 
-		<!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
-		<dependency>
-			<groupId>io.github.bonigarcia</groupId>
-			<artifactId>webdrivermanager</artifactId>
-			<version>3.7.1</version>
-		</dependency>
+	 <dependency>
+		 <groupId>io.github.bonigarcia</groupId>
+		 <artifactId>webdrivermanager</artifactId>
+		 <version>5.7.0</version>
+		 <scope>test</scope>
+	 </dependency>
 
 
 		<!-- https://mvnrepository.com/artifact/org.apache.maven/maven-plugin-api -->
