@@ -41,7 +41,7 @@ pipeline {
 
         stage('Code Build') {
             steps {
-                 sh 'mvn clean -Dtest=jenkins.tests.GoogleTest'
+                 sh 'mvn clean install -Dtest=jenkins.tests.GoogleTest'
             }
         }
 
