@@ -14,7 +14,7 @@ pipeline {
     }
 
     environment {
-        APP_NAME = "DCUBE_APP"
+        APP_NAME = "Jenkins"
         APP_ENV  = "DEV"
     }
 
@@ -39,10 +39,27 @@ pipeline {
             }
         }
 
-        stage('Code Build') {
+        stage('Test') {
             steps {
                  sh 'mvn clean install -Dtest=jenkins.tests.GoogleTest'
             }
+            post {
+
+                            // If Maven was able to run the tests, even if some of the test
+                            // failed, record the test results and archive the jar file.
+                            success {
+                              publishHTML([
+                                          allowMissing: false,
+                                          alwaysLinkToLastBuild: false,
+                                          keepAll: false,
+                                          reportDir: 'ExtentReport',
+                                          reportFiles: 'Spark.html',
+                                          reportName: 'myReport',
+                                          reportTitles: '',
+                                          useWrapperFileDirectly: true])
+                            }
+                        }
+
         }
 
         stage('Priting All Global Variables') {
